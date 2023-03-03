@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: # defined by MySQLTestcontainersExtension
+    username:
+    password:
+    hikari:
+      maximum-pool-size: 50
+  jpa:
+    hibernate:
+      ddl-auto: create
+    open-in-view: false
+    database-platform: org.hibernate.dialect.MySQL57Dialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  data:
+    mongodb:
+      uri: # defined by MongodbIntegrationExtension
+
+  redis:
+    url: # defined by RedisTestcontainersExtension
